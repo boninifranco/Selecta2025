@@ -1,0 +1,110 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+header {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+    font-size: 2.5em; /* Tamaño de fuente más grande para pantallas táctiles */
+}
+
+.video-player-container {
+    width: 90%; /* Ajusta el ancho según tu necesidad */
+    max-width: 1200px; /* Ancho máximo */
+    margin-bottom: 40px;
+    background-color: #000; /* Fondo negro para el reproductor */
+    border-radius: 10px;
+    overflow: hidden; /* Asegura que el video no se salga del contenedor */
+}
+
+#main-video {
+    width: 100%;
+    height: auto;
+    display: block; /* Elimina espacio extra debajo del video */
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Columnas responsivas */
+    gap: 20px; /* Espacio entre los elementos de la cuadrícula */
+    width: 90%;
+    max-width: 1200px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.bovino-item {
+    background-color: #e9e9e9;
+    border-radius: 8px;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+    text-align: center;
+    padding-bottom: 10px; /* Espacio para el texto */
+}
+
+.bovino-item:hover {
+    transform: translateY(-5px); /* Pequeño efecto al pasar el mouse/tocar */
+}
+
+.bovino-item img {
+    width: 100%;
+    height: 180px; /* Altura fija para las imágenes */
+    object-fit: cover; /* Recorta la imagen para que cubra el área */
+    border-bottom: 1px solid #ddd;
+}
+
+.bovino-item h3 {
+    margin: 10px 0 5px;
+    color: #555;
+    font-size: 1.2em;
+}
+
+.bovino-item p {
+    margin: 0;
+    color: #777;
+    font-size: 0.9em;
+}
+#youtube-player {
+    width: 100%;
+    height: 100%; /* El iframe tomará el 100% del contenedor */
+    /* Asegúrate de que el video-player-container tenga una altura definida o usa un aspect-ratio hack para responsive */
+    aspect-ratio: 16 / 9; /* Esto es excelente para videos y asegura que siempre tenga la proporción correcta */
+    background-color: #000;
+}
+
+.video-player-container {
+    width: 90%;
+    max-width: 1200px;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative; /* Necesario para que aspect-ratio funcione bien o para centrar */
+    padding-top: calc(90% / (16/9)); /* Esto es un hack para mantener la proporción 16:9 si no soportan aspect-ratio */
+    /* O directamente: */
+    /* height: 675px; /* Ejemplo de altura fija para 1200px de ancho en 16:9 */
+}
+
+/* Si usas aspect-ratio, asegúrate de que el contenedor de video no tenga un padding-top que lo distorsione */
+@supports (aspect-ratio: 16/9) {
+    .video-player-container {
+        padding-top: 0; /* Anula el hack si el navegador soporta aspect-ratio */
+        aspect-ratio: 16 / 9;
+        height: auto; /* Permite que la altura se ajuste automáticamente */
+    }
+}

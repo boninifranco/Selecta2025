@@ -35,16 +35,26 @@ h1 {
     background-color: #000;
     border-radius: 10px;
     overflow: hidden;
-    position: relative; /* Necesario para el aspect-ratio o padding-top hack */
+    position: relative; /* CRUCIAL para que el iframe posicionado absolutamente funcione */
 
-    /* Usa el hack de padding-top si aspect-ratio no funciona en el TV */
-    /* padding-top: calc(90% / (16/9)); */
-    /* height: 0; */
+    /* ***** SOLUCIÓN PROPUESTA: Usar el padding-top hack forzado ***** */
+    padding-top: 56.25%; /* Esto es (9 / 16) * 100% para una proporción 16:9 */
+    height: 0; /* Asegura que la altura del contenedor sea solo la del padding */
 
-    /* O usa aspect-ratio (preferido si el TV lo soporta) */
-    aspect-ratio: 16 / 9;
-    height: auto;
+    /* ***** COMENTA O ELIMINA ESTAS LÍNEAS ***** */
+    /* aspect-ratio: 16 / 9; */
+    /* height: auto; */
+
+    /* El bloque @supports también se puede ELIMINAR O COMENTAR si solo usas el hack */
+    /* @supports (aspect-ratio: 16/9) {
+        .video-player-container {
+            padding-top: 0;
+            aspect-ratio: 16 / 9;
+            height: auto;
+        }
+    } */
 }
+
 
 /* ** ELIMINA O COMENTA #main-video ya que no lo usas con la API de YouTube ** */
 /* #main-video {
@@ -101,13 +111,15 @@ h1 {
 
 /* ** ESTOS ESTILOS SON CLAVE para el iframe de YouTube ** */
 #youtube-player {
+    position: absolute; /* CRUCIAL: Posiciona el reproductor absolutamente */
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
     padding: 0;
     margin: 0;
     background-color: #000;
 }
-
 #youtube-player iframe {
     width: 100% !important;
     height: 100% !important;

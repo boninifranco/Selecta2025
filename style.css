@@ -17,33 +17,46 @@ header {
 
 h1 {
     color: #333;
-    font-size: 2.5em; 
+    font-size: 2.5em;
 }
 
-.general-container{
+.general-container { /* Agregado para envolver main si es necesario centralizar todo */
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-.video-player-container {
-    width: 90%; 
-    max-width: 1200px; 
-    margin-bottom: 40px;
-    background-color: #000; 
-    border-radius: 10px;
-    overflow: hidden; 
+    width: 100%; /* Asegura que ocupe todo el ancho disponible */
 }
 
-#main-video {
+/* ** ESTE ES EL BLOQUE CORRECTO Y ÚNICO para .video-player-container ** */
+.video-player-container {
+    width: 90%;
+    max-width: 1200px;
+    margin-bottom: 40px;
+    background-color: #000;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative; /* Necesario para el aspect-ratio o padding-top hack */
+
+    /* Usa el hack de padding-top si aspect-ratio no funciona en el TV */
+    /* padding-top: calc(90% / (16/9)); */
+    /* height: 0; */
+
+    /* O usa aspect-ratio (preferido si el TV lo soporta) */
+    aspect-ratio: 16 / 9;
+    height: auto;
+}
+
+/* ** ELIMINA O COMENTA #main-video ya que no lo usas con la API de YouTube ** */
+/* #main-video {
     width: 100%;
     height: auto;
-    display: block; 
-}
+    display: block;
+} */
 
 .gallery-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
-    gap: 20px; 
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
     width: 90%;
     max-width: 1200px;
     padding: 20px;
@@ -60,17 +73,17 @@ h1 {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s ease-in-out;
     text-align: center;
-    padding-bottom: 10px; 
+    padding-bottom: 10px;
 }
 
 .bovino-item:hover {
-    transform: translateY(-5px); 
+    transform: translateY(-5px);
 }
 
 .bovino-item img {
     width: 100%;
-    height: 180px; 
-    object-fit: cover; 
+    height: 180px;
+    object-fit: cover;
     border-bottom: 1px solid #ddd;
 }
 
@@ -85,50 +98,30 @@ h1 {
     color: #777;
     font-size: 0.9em;
 }
-.video-player-container {
-    width: 90%;
-    max-width: 1200px;
-    margin-bottom: 40px;
-    border-radius: 10px;
-    overflow: hidden;
-    position: relative; /* Necesario para que aspect-ratio funcione bien o para centrar */
 
-    /* **Revisa este hack si tienes problemas** */
-    /* Elimina o comenta temporalmente el padding-top si el aspect-ratio no es la causa */
-    /* padding-top: calc(90% / (16/9)); */ /* Este es el hack para mantener la proporción 16:9 si no soportan aspect-ratio */
-
-    /* Si usas aspect-ratio, asegúrate de que el contenedor de video no tenga un padding-top que lo distorsione */
-    /* @supports (aspect-ratio: 16/9) { */
-        /* .video-player-container { */
-            /* padding-top: 0; */ /* Anula el hack si el navegador soporta aspect-ratio */
-            aspect-ratio: 16 / 9; /* **Mantén este si el TV lo soporta** */
-            height: auto;
-        /* } */
-    /* } */
-}
-
+/* ** ESTOS ESTILOS SON CLAVE para el iframe de YouTube ** */
 #youtube-player {
     width: 100%;
     height: 100%;
-    /* Asegúrate de que no haya padding o margin aquí que reduzca el tamaño interno */
     padding: 0;
     margin: 0;
     background-color: #000;
 }
 
-/* **AÑADE ESTO para apuntar al iframe directamente** */
 #youtube-player iframe {
     width: 100% !important;
     height: 100% !important;
-    display: block; /* Para eliminar cualquier espacio extra */
+    display: block;
     margin: 0;
     padding: 0;
-    border: none; /* Elimina cualquier borde por defecto */
+    border: none;
 }
+
+/* Vuelve a activar el @supports si lo comentaste para depurar el TV */
 @supports (aspect-ratio: 16/9) {
     .video-player-container {
         padding-top: 0;
         aspect-ratio: 16 / 9;
-        height: auto; 
+        height: auto;
     }
 }

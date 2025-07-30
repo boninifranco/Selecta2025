@@ -56,10 +56,11 @@ document.addEventListener('DOMContentLoaded', async () => {
                     videoId: videoId,
                     playerVars: {
                         'autoplay': 1,      // Reproducción automática
+                        'loop': 1,
                         'controls': 1,      // Mostrar controles del reproductor
                         'rel': 0,           // No mostrar videos relacionados al final
-                        'showinfo': 0,      // No mostrar título del video ni uploader
-                        'modestbranding': 1 // Ocultar logo de YouTube en la barra de control
+                        'fs': 0,
+                        'mute': 1,
                     },
                     events: {
                         'onReady': onPlayerReady,
@@ -85,6 +86,13 @@ document.addEventListener('DOMContentLoaded', async () => {
         // cuando el actual termine, o mostrar un mensaje.
         // console.log("Estado del reproductor:", event.data);
     }
+
+        function scrollToTop() {
+        // Opción 1: Desplazamiento suave (recomendado)
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
 
     // --- Lógica de Inicialización ---
 

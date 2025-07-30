@@ -1,13 +1,18 @@
-let player;
+let player; // Variable global para el objeto del reproductor de YouTube
 
-
+// Esta función será llamada automáticamente por la API de YouTube cuando esté lista
 function onYouTubeIframeAPIReady() {
+    // Si bovinos se ha cargado y hay un primer video, lo inicializamos.
+    // Esto asegura que el reproductor se cree y se cargue el primer video
+    // una vez que la API esté lista Y los datos estén cargados.
+    // La lógica de carga inicial se maneja dentro del DOMContentLoaded listener.
 }
 
 document.addEventListener('DOMContentLoaded', async () => {
     const bovinoGallery = document.getElementById('bovino-gallery');
-    const youtubePlayerContainer = document.getElementById('youtube-player');
-    let bovinos = [];
+    const youtubePlayerContainer = document.getElementById('youtube-player'); // Asegúrate de que este div esté en tu HTML
+    let bovinos = []; // Aquí cargaremos los datos scrapeados
+
     try {
         const response = await fetch('bovinos_youtube_data.json');
         bovinos = await response.json();
@@ -15,7 +20,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     } catch (error) {
         console.error("Error al cargar los datos de bovinos:", error);
         alert("No se pudieron cargar los datos de los bovinos. Asegúrate de que 'bovinos_youtube_data.json' existe.");
-        return; 
+        return;
     }
 
     /**
@@ -26,15 +31,17 @@ document.addEventListener('DOMContentLoaded', async () => {
             if (bovino.thumbnail_image && bovino.youtube_video_id) {
                 const bovinoItem = document.createElement('div');
                 bovinoItem.classList.add('bovino-item');
-                bovinoItem.dataset.videoId = bovino.youtube_video_id; 
+                bovinoItem.dataset.videoId = bovino.youtube_video_id;
 
                 bovinoItem.innerHTML = `
                     <img src="${bovino.thumbnail_image}" alt="${bovino.name}">
                     <h3>${bovino.name}</h3>
-                    `;
+                `;
 
                 bovinoItem.addEventListener('click', () => {
                     playYouTubeVideo(bovino.youtube_video_id);
+                    // *** AÑADIR ESTA LÍNEA AQUÍ ***
+                    scrollToTop(); // Llama a la función para desplazar la vista
                 });
 
                 bovinoGallery.appendChild(bovinoItem);
@@ -47,33 +54,29 @@ document.addEventListener('DOMContentLoaded', async () => {
      * @param {string} videoId - El ID del video de YouTube a reproducir.
      */
     function playYouTubeVideo(videoId) {
-        // Asegúrate de que la API de YouTube esté cargada y lista
         if (typeof YT !== 'undefined' && YT.Player) {
-            if (!player) { // Si el reproductor no ha sido creado aún
+            if (!player) {
                 player = new YT.Player('youtube-player', {
-                    height: '100%', // El iframe ocupará el 100% de la altura de su contenedor
-                    width: '100%',  // El iframe ocupará el 100% del ancho de su contenedor
+                    height: '100%',
+                    width: '100%',
                     videoId: videoId,
                     playerVars: {
-                        'autoplay': 1,      // Reproducción automática
-                        'loop': 1,
-                        'controls': 1,      // Mostrar controles del reproductor
-                        'rel': 0,           // No mostrar videos relacionados al final
-                        'fs': 0,
-                        'mute': 1,
+                        'autoplay': 1,
+                        'controls': 1,
+                        'rel': 0,
+                        'showinfo': 0,
+                        'modestbranding': 1
                     },
                     events: {
                         'onReady': onPlayerReady,
                         'onStateChange': onPlayerStateChange
                     }
                 });
-            } else { // Si el reproductor ya existe, simplemente carga un nuevo video
+            } else {
                 player.loadVideoById(videoId);
             }
         } else {
-            console.warn("La API de YouTube no está cargada aún. Intentando reproducir más tarde...");
-            // Si la API aún no está lista, puedes añadir un reintento o una cola
-            // Para este ejemplo, asumiremos que se cargará rápidamente
+            console.warn("La API de YouTube no está cargada aún. No se puede reproducir el video.");
         }
     }
 
@@ -82,40 +85,32 @@ document.addEventListener('DOMContentLoaded', async () => {
     }
 
     function onPlayerStateChange(event) {
-        // Puedes añadir lógica aquí, por ejemplo, para reproducir el siguiente video
-        // cuando el actual termine, o mostrar un mensaje.
-        // console.log("Estado del reproductor:", event.data);
+        // Lógica para cambios de estado (si es necesario)
     }
 
-        function scrollToTop() {
+    /**
+     * Desplaza la ventana del navegador al inicio de la página.
+     */
+    function scrollToTop() {
         // Opción 1: Desplazamiento suave (recomendado)
         window.scrollTo({
             top: 0,
             behavior: 'smooth'
         });
+    }
 
     // --- Lógica de Inicialización ---
-
-    // Carga la galería al iniciar
     loadBovinosGallery();
 
-    // Reproducir el primer video al cargar la página si hay datos y la API de YouTube está lista
-    // onYouTubeIframeAPIReady se encargará de esto si es llamada por la API
-    // Si bovinos_youtube_data.json se carga después de onYouTubeIframeAPIReady,
-    // es posible que necesitemos llamar a playYouTubeVideo aquí.
+    // Lógica para reproducir el primer video al cargar la página
+    // Aseguramos que se intente inicializar cuando la API de YT esté lista y tengamos datos
     if (bovinos.length > 0 && bovinos[0].youtube_video_id) {
-        // Si onYouTubeIframeAPIReady ya se ejecutó, el reproductor puede ser creado inmediatamente.
-        // Si no, la llamada a playYouTubeVideo esperará a que YT.Player esté disponible.
-        // La función onYouTubeIframeAPIReady asegura que el reproductor se inicialice cuando la API esté lista.
-        // Para asegurar que el primer video se cargue, lo asignaremos directamente al onYouTubeIframeAPIReady
-        // o lo haremos aquí si la API ya está lista.
-        // Aquí ajustamos la lógica para que el primer video se cargue cuando el reproductor esté listo.
         if (typeof YT !== 'undefined' && YT.Player) {
             playYouTubeVideo(bovinos[0].youtube_video_id);
         } else {
-            // Si la API aún no está lista, la función global onYouTubeIframeAPIReady se encargará
-            // de inicializar el reproductor con el primer video cuando se cargue.
-            // Sobreescribimos onYouTubeIframeAPIReady para que lo haga.
+            // Si la API de YT aún no está lista, configuramos la función onYouTubeIframeAPIReady
+            // para que reproduzca el primer video una vez que se cargue la API.
+            // Esto es crucial para la carga inicial.
             window.onYouTubeIframeAPIReady = function() {
                 if (bovinos.length > 0 && bovinos[0].youtube_video_id) {
                     playYouTubeVideo(bovinos[0].youtube_video_id);

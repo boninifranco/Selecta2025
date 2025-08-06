@@ -137,3 +137,19 @@ h1 {
         height: auto;
     }
 }
+
+/* Capa para bloquear los clics en el reproductor */
+.click-overlay {
+    /* Se posiciona de forma absoluta respecto al contenedor padre */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    /* Un z-index alto asegura que esté por encima de todo lo demás dentro del contenedor */
+    z-index: 5;
+
+    /* Opcional: Cambia el cursor para que no parezca que se puede hacer clic */
+    cursor: default;
+}

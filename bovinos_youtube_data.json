@@ -1,522 +1,263 @@
 [
-    {
-        "name": "Lote 001 (FAENA)",
-        "youtube_video_id": "hzStotE33k0",
-        "thumbnail_image": "https://img.youtube.com/vi/hzStotE33k0/mqdefault.jpg"
-    },
-    {
-        "name": "Lote 002 (FAENA)",
-        "youtube_video_id": "oebOP035ThE",
-        "thumbnail_image": "https://img.youtube.com/vi/oebOP035ThE/mqdefault.jpg"
-    },
-    {
-        "name": "Lote 003 (FAENA)",
-        "youtube_video_id": "wsULZr1F96o",
-        "thumbnail_image": "https://img.youtube.com/vi/wsULZr1F96o/mqdefault.jpg"
-    },
-    {
-        "name": "Lote 004 (FAENA)",
-        "youtube_video_id": "gcIPrDnJMig",
-        "thumbnail_image": "https://img.youtube.com/vi/gcIPrDnJMig/mqdefault.jpg"
-    },
-    {
-        "name": "Lote 005 (FAENA)",
-        "youtube_video_id": "_nYqFAthecs",
-        "thumbnail_image": "https://img.youtube.com/vi/_nYqFAthecs/mqdefault.jpg"
-    },
-    {
-        "name": "Lote 006 (FAENA)",
-        "youtube_video_id": "4sMn_L8lEAw",
-        "thumbnail_image": "https://img.youtube.com/vi/4sMn_L8lEAw/mqdefault.jpg"
-    },
-    {
-        "name": "Lote 007 (FAENA)",
-        "youtube_video_id": "2hcIIEGV_sA",
-        "thumbnail_image": "https://img.youtube.com/vi/2hcIIEGV_sA/mqdefault.jpg"
-    },
-    {
-        "name": "Lote 008 (FAENA)",
-        "youtube_video_id": "jYN6ZiyLpRA",
-        "thumbnail_image": "https://img.youtube.com/vi/jYN6ZiyLpRA/mqdefault.jpg"
-    },
-    {
-        "name": "Lote 009 (FAENA)",
-        "youtube_video_id": "ZhhTq-GrxG0",
-        "thumbnail_image": "https://img.youtube.com/vi/ZhhTq-GrxG0/mqdefault.jpg"
-    },
-    {
-        "name": "Lote 010 (FAENA)",
-        "youtube_video_id": "KkwmvkURoHQ",
-        "thumbnail_image": "https://img.youtube.com/vi/KkwmvkURoHQ/mqdefault.jpg"
-    },
-    {
-        "name": "Lote 011 (FAENA)",
-        "youtube_video_id": "SKBioc0qwng",
-        "thumbnail_image": "https://img.youtube.com/vi/SKBioc0qwng/mqdefault.jpg"
-    },
-    {
-        "name": "Lote 012 (FAENA)",
-        "youtube_video_id": "o52ldXSFH-Q",
-        "thumbnail_image": "https://img.youtube.com/vi/o52ldXSFH-Q/mqdefault.jpg"
-    },
-    {
-        "name": "Lote 013 (FAENA)",
-        "youtube_video_id": "C3ew9sEUwBA",
-        "thumbnail_image": "https://img.youtube.com/vi/C3ew9sEUwBA/mqdefault.jpg"
-    },
-    {
-        "name": "Lote 014 (FAENA)",
-        "youtube_video_id": "nFOGmgXgM5U",
-        "thumbnail_image": "https://img.youtube.com/vi/nFOGmgXgM5U/mqdefault.jpg"
-    },
-    {
-        "name": "Lote 015 (FAENA)",
-        "youtube_video_id": "wzMZtLJFelI",
-        "thumbnail_image": "https://img.youtube.com/vi/wzMZtLJFelI/mqdefault.jpg"
-    },
-    {
-        "name": "Lote 016 (FAENA)",
-        "youtube_video_id": "qkFmC2BjmN0",
-        "thumbnail_image": "https://img.youtube.com/vi/qkFmC2BjmN0/mqdefault.jpg"
-    },
-    {
-        "name": "Lote 017 (FAENA)",
-        "youtube_video_id": "ob7xzeb3HUk",
-        "thumbnail_image": "https://img.youtube.com/vi/ob7xzeb3HUk/mqdefault.jpg"
-    },
-    {
-        "name": "Lote 018 (FAENA)",
-        "youtube_video_id": "qdlbypWGOrM",
-        "thumbnail_image": "https://img.youtube.com/vi/qdlbypWGOrM/mqdefault.jpg"
-    },
-    {
-        "name": "Lote 019 (FAENA)",
-        "youtube_video_id": "KMTzHdfS__I",
-        "thumbnail_image": "https://img.youtube.com/vi/KMTzHdfS__I/mqdefault.jpg"
-    },
-    {
-        "name": "Lote 020 (FAENA)",
-        "youtube_video_id": "eWsacso_ORY",
-        "thumbnail_image": "https://img.youtube.com/vi/eWsacso_ORY/mqdefault.jpg"
-    },
-    {
-        "name": "Lote 021 (FAENA)",
-        "youtube_video_id": "XNrVbNUyaMA",
-        "thumbnail_image": "https://img.youtube.com/vi/XNrVbNUyaMA/mqdefault.jpg"
-    },
-    {
-        "name": "Lote 022 (FAENA)",
-        "youtube_video_id": "tew_y9Wo-hc",
-        "thumbnail_image": "https://img.youtube.com/vi/tew_y9Wo-hc/mqdefault.jpg"
-    },
-    {
-        "name": "Lote 023 (FAENA)",
-        "youtube_video_id": "4JvQJQKv1Z4",
-        "thumbnail_image": "https://img.youtube.com/vi/4JvQJQKv1Z4/mqdefault.jpg"
-    },
-    {
-        "name": "Lote 024 (FAENA)",
-        "youtube_video_id": "lF-Z8Fub9bM",
-        "thumbnail_image": "https://img.youtube.com/vi/lF-Z8Fub9bM/mqdefault.jpg"
-    },
-    {
-        "name": "Lote 025 (FAENA)",
-        "youtube_video_id": "VrLbqtPlUTE",
-        "thumbnail_image": "https://img.youtube.com/vi/VrLbqtPlUTE/mqdefault.jpg"
-    },
-    {
-        "name": "Lote 026 (FAENA)",
-        "youtube_video_id": "9AknhhLs13I",
-        "thumbnail_image": "https://img.youtube.com/vi/9AknhhLs13I/mqdefault.jpg"
-    },
-    {
-        "name": "Lote 027 (FAENA)",
-        "youtube_video_id": "rqx0UYkHqfU",
-        "thumbnail_image": "https://img.youtube.com/vi/rqx0UYkHqfU/mqdefault.jpg"
-    },
-    {
-        "name": "Lote 028 (FAENA)",
-        "youtube_video_id": "GeKQqz-JgIw",
-        "thumbnail_image": "https://img.youtube.com/vi/GeKQqz-JgIw/mqdefault.jpg"
-    },
-    {
-        "name": "Lote 029 (FAENA)",
-        "youtube_video_id": "s-TRO32ywOA",
-        "thumbnail_image": "https://img.youtube.com/vi/s-TRO32ywOA/mqdefault.jpg"
-    },
-    {
-        "name": "Lote 030 (FAENA)",
-        "youtube_video_id": "hyoBoXqPrKc",
-        "thumbnail_image": "https://img.youtube.com/vi/hyoBoXqPrKc/mqdefault.jpg"
-    },
-    {
-        "name": "Lote 031 (FAENA)",
-        "youtube_video_id": "c2BjRih4cDE",
-        "thumbnail_image": "https://img.youtube.com/vi/c2BjRih4cDE/mqdefault.jpg"
-    },
-    {
-        "name": "Lote 032 (VACAS VACÍAS)",
-        "youtube_video_id": "6O21IHL9khQ",
-        "thumbnail_image": "https://img.youtube.com/vi/6O21IHL9khQ/mqdefault.jpg"
-    },
-    {
-        "name": "Lote 033 (VACAS VACÍAS)",
-        "youtube_video_id": "fvdbBh7v70w",
-        "thumbnail_image": "https://img.youtube.com/vi/fvdbBh7v70w/mqdefault.jpg"
-    },
-    {
-        "name": "Lote 034 (VACAS VACÍAS)",
-        "youtube_video_id": "c2WvJ0--TEQ",
-        "thumbnail_image": "https://img.youtube.com/vi/c2WvJ0--TEQ/mqdefault.jpg"
-    },
-    {
-        "name": "Lote 035 (VACAS VACÍAS)",
-        "youtube_video_id": "a6BrUY_jv_c",
-        "thumbnail_image": "https://img.youtube.com/vi/a6BrUY_jv_c/mqdefault.jpg"
-    },
-    {
-        "name": "Lote 036 (TERNEROS)",
-        "youtube_video_id": "2TC-a6fVQ7o",
-        "thumbnail_image": "https://img.youtube.com/vi/2TC-a6fVQ7o/mqdefault.jpg"
-    },
-    {
-        "name": "Lote 037 (TERNEROS)",
-        "youtube_video_id": "8QdM6z103Sw",
-        "thumbnail_image": "https://img.youtube.com/vi/8QdM6z103Sw/mqdefault.jpg"
-    },
-    {
-        "name": "Lote 038 (TERNEROS)",
-        "youtube_video_id": "PdUY-MnWssM",
-        "thumbnail_image": "https://img.youtube.com/vi/PdUY-MnWssM/mqdefault.jpg"
-    },
-    {
-        "name": "Lote 039 (TERNEROS)",
-        "youtube_video_id": "jQlNEhTyao0",
-        "thumbnail_image": "https://img.youtube.com/vi/jQlNEhTyao0/mqdefault.jpg"
-    },
-    {
-        "name": "Lote 040 (TERNEROS)",
-        "youtube_video_id": "EhiEWHvXe_8",
-        "thumbnail_image": "https://img.youtube.com/vi/EhiEWHvXe_8/mqdefault.jpg"
-    },
-    {
-        "name": "Lote 041 (TERNEROS)",
-        "youtube_video_id": "zY5fVZiYop8",
-        "thumbnail_image": "https://img.youtube.com/vi/zY5fVZiYop8/mqdefault.jpg"
-    },
-    {
-        "name": "Lote 042 (TERNEROS)",
-        "youtube_video_id": "DEUoyHg_0LQ",
-        "thumbnail_image": "https://img.youtube.com/vi/DEUoyHg_0LQ/mqdefault.jpg"
-    },
-    {
-        "name": "Lote 043 (TERNEROS)",
-        "youtube_video_id": "DuLrVicjhME",
-        "thumbnail_image": "https://img.youtube.com/vi/DuLrVicjhME/mqdefault.jpg"
-    },
-    {
-        "name": "Lote 044 (TERNEROS)",
-        "youtube_video_id": "NflNNeqxclE",
-        "thumbnail_image": "https://img.youtube.com/vi/NflNNeqxclE/mqdefault.jpg"
-    },
-    {
-        "name": "Lote 045 (TERNEROS)",
-        "youtube_video_id": "s9md0qocMNg",
-        "thumbnail_image": "https://img.youtube.com/vi/s9md0qocMNg/mqdefault.jpg"
-    },
-    {
-        "name": "Lote 046 (TERNEROS)",
-        "youtube_video_id": "6wF2iN8Jvmo",
-        "thumbnail_image": "https://img.youtube.com/vi/6wF2iN8Jvmo/mqdefault.jpg"
-    },
-    {
-        "name": "Lote 047 (TERNEROS)",
-        "youtube_video_id": "cw-qAT8yghQ",
-        "thumbnail_image": "https://img.youtube.com/vi/cw-qAT8yghQ/mqdefault.jpg"
-    },
-    {
-        "name": "Lote 048 (TERNEROS)",
-        "youtube_video_id": "Ck0Y5oH-ZJI",
-        "thumbnail_image": "https://img.youtube.com/vi/Ck0Y5oH-ZJI/mqdefault.jpg"
-    },
-    {
-        "name": "Lote 049 (TERNEROS)",
-        "youtube_video_id": "jWGzoeuN_D0",
-        "thumbnail_image": "https://img.youtube.com/vi/jWGzoeuN_D0/mqdefault.jpg"
-    },
-    {
-        "name": "Lote 050 (TERNEROS)",
-        "youtube_video_id": "Gk_Cx0lhi1Q",
-        "thumbnail_image": "https://img.youtube.com/vi/Gk_Cx0lhi1Q/mqdefault.jpg"
-    },
-    {
-        "name": "Lote 051 (TERNEROS)",
-        "youtube_video_id": "NtBizsQBWk4",
-        "thumbnail_image": "https://img.youtube.com/vi/NtBizsQBWk4/mqdefault.jpg"
-    },
-    {
-        "name": "Lote 052 (TERNEROS)",
-        "youtube_video_id": "Ze5QN-nN0AY",
-        "thumbnail_image": "https://img.youtube.com/vi/Ze5QN-nN0AY/mqdefault.jpg"
-    },
-    {
-        "name": "Lote 053 (TERNEROS)",
-        "youtube_video_id": "dII-utJlRqI",
-        "thumbnail_image": "https://img.youtube.com/vi/dII-utJlRqI/mqdefault.jpg"
-    },
-    {
-        "name": "Lote 054 (TERNEROS)",
-        "youtube_video_id": "xIao4InA6Zw",
-        "thumbnail_image": "https://img.youtube.com/vi/xIao4InA6Zw/mqdefault.jpg"
-    },
-    {
-        "name": "Lote 055 (TERNEROS)",
-        "youtube_video_id": "LYgxOmeGmgc",
-        "thumbnail_image": "https://img.youtube.com/vi/LYgxOmeGmgc/mqdefault.jpg"
-    },
-    {
-        "name": "Lote 056 (TERNEROS)",
-        "youtube_video_id": "QJFV8EPzw1I",
-        "thumbnail_image": "https://img.youtube.com/vi/QJFV8EPzw1I/mqdefault.jpg"
-    },
-    {
-        "name": "Lote 057 (TERNEROS)",
-        "youtube_video_id": "2uq6rbBZUH4",
-        "thumbnail_image": "https://img.youtube.com/vi/2uq6rbBZUH4/mqdefault.jpg"
-    },
-    {
-        "name": "Lote 058 (TERNEROS)",
-        "youtube_video_id": "CnTyW8n_e5k",
-        "thumbnail_image": "https://img.youtube.com/vi/CnTyW8n_e5k/mqdefault.jpg"
-    },
-    {
-        "name": "Lote 059 (TERNEROS)",
-        "youtube_video_id": "m95d5KnihQg",
-        "thumbnail_image": "https://img.youtube.com/vi/m95d5KnihQg/mqdefault.jpg"
-    },
-    {
-        "name": "Lote 060 (TERNEROS)",
-        "youtube_video_id": "mvP9aQUaOxI",
-        "thumbnail_image": "https://img.youtube.com/vi/mvP9aQUaOxI/mqdefault.jpg"
-    },
-    {
-        "name": "Lote 061 (TERNEROS)",
-        "youtube_video_id": "dIfNeOfXwAE",
-        "thumbnail_image": "https://img.youtube.com/vi/dIfNeOfXwAE/mqdefault.jpg"
-    },
-    {
-        "name": "Lote 062 (TERNEROS)",
-        "youtube_video_id": "sjeZV_3ynQ0",
-        "thumbnail_image": "https://img.youtube.com/vi/sjeZV_3ynQ0/mqdefault.jpg"
-    },
-    {
-        "name": "Lote 063 (TERNEROS)",
-        "youtube_video_id": "kMu5qcE8PPc",
-        "thumbnail_image": "https://img.youtube.com/vi/kMu5qcE8PPc/mqdefault.jpg"
-    },
-    {
-        "name": "Lote 064 (TERNEROS)",
-        "youtube_video_id": "6aG6AHvGiaQ",
-        "thumbnail_image": "https://img.youtube.com/vi/6aG6AHvGiaQ/mqdefault.jpg"
-    },
-    {
-        "name": "Lote 065 (TERNEROS A TÉRMINO)",
-        "youtube_video_id": "nfmE5V_5pe0",
-        "thumbnail_image": "https://img.youtube.com/vi/nfmE5V_5pe0/mqdefault.jpg"
-    },
-    {
-        "name": "Lote 066 (TERNEROS A TÉRMINO)",
-        "youtube_video_id": "6ve0uQgtJeE",
-        "thumbnail_image": "https://img.youtube.com/vi/6ve0uQgtJeE/mqdefault.jpg"
-    },
-    {
-        "name": "Lote 067 (TERNEROS A TÉRMINO)",
-        "youtube_video_id": "ZqGw6uSzmnA",
-        "thumbnail_image": "https://img.youtube.com/vi/ZqGw6uSzmnA/mqdefault.jpg"
-    },
-    {
-        "name": "Lote 068 (TERNEROS A TÉRMINO)",
-        "youtube_video_id": "sOtX1GOclnA",
-        "thumbnail_image": "https://img.youtube.com/vi/sOtX1GOclnA/mqdefault.jpg"
-    },
-    {
-        "name": "Lote 069 (TERNEROS Y TERNERAS)",
-        "youtube_video_id": "cv2wtAJ1B9Q",
-        "thumbnail_image": "https://img.youtube.com/vi/cv2wtAJ1B9Q/mqdefault.jpg"
-    },
-    {
-        "name": "Lote 070 (TERNEROS Y TERNERAS)",
-        "youtube_video_id": "fSln6DA_1io",
-        "thumbnail_image": "https://img.youtube.com/vi/fSln6DA_1io/mqdefault.jpg"
-    },
-    {
-        "name": "Lote 071 (TERNEROS Y TERNERAS)",
-        "youtube_video_id": "5zwqMcJ6lXI",
-        "thumbnail_image": "https://img.youtube.com/vi/5zwqMcJ6lXI/mqdefault.jpg"
-    },
-    {
-        "name": "Lote 072 (TERNEROS Y TERNERAS)",
-        "youtube_video_id": "-U9ANC7zinI",
-        "thumbnail_image": "https://img.youtube.com/vi/-U9ANC7zinI/mqdefault.jpg"
-    },
-    {
-        "name": "Lote 073 (TERNEROS Y TERNERAS)",
-        "youtube_video_id": "hud72LwSpnQ",
-        "thumbnail_image": "https://img.youtube.com/vi/hud72LwSpnQ/mqdefault.jpg"
-    },
-    {
-        "name": "Lote 074 (TERNEROS Y TERNERAS)",
-        "youtube_video_id": "aqjRy5BTE3g",
-        "thumbnail_image": "https://img.youtube.com/vi/aqjRy5BTE3g/mqdefault.jpg"
-    },
-    {
-        "name": "Lote 075 (TERNEROS Y TERNERAS)",
-        "youtube_video_id": "XFPLPiKO5h8",
-        "thumbnail_image": "https://img.youtube.com/vi/XFPLPiKO5h8/mqdefault.jpg"
-    },
-    {
-        "name": "Lote 076 (TERNEROS Y TERNERAS)",
-        "youtube_video_id": "j0OSrer_KdE",
-        "thumbnail_image": "https://img.youtube.com/vi/j0OSrer_KdE/mqdefault.jpg"
-    },
-    {
-        "name": "Lote 077 (TERNEROS Y TERNERAS)",
-        "youtube_video_id": "8eADkk0Zwrs",
-        "thumbnail_image": "https://img.youtube.com/vi/8eADkk0Zwrs/mqdefault.jpg"
-    },
-    {
-        "name": "Lote 078 (TERNEROS Y TERNERAS)",
-        "youtube_video_id": "a0k00F4Phps",
-        "thumbnail_image": "https://img.youtube.com/vi/a0k00F4Phps/mqdefault.jpg"
-    },
-    {
-        "name": "Lote 079 (TERNERAS)",
-        "youtube_video_id": "PirWO9A4eJ4",
-        "thumbnail_image": "https://img.youtube.com/vi/PirWO9A4eJ4/mqdefault.jpg"
-    },
-    {
-        "name": "Lote 080 (TERNERAS)",
-        "youtube_video_id": "PTcNt4jYP1s",
-        "thumbnail_image": "https://img.youtube.com/vi/PTcNt4jYP1s/mqdefault.jpg"
-    },
-    {
-        "name": "Lote 081 (TERNERAS)",
-        "youtube_video_id": "fX25Ey0R1ws",
-        "thumbnail_image": "https://img.youtube.com/vi/fX25Ey0R1ws/mqdefault.jpg"
-    },
-    {
-        "name": "Lote 082 (TERNERAS)",
-        "youtube_video_id": "yyj7d6K6q_g",
-        "thumbnail_image": "https://img.youtube.com/vi/yyj7d6K6q_g/mqdefault.jpg"
-    },
-    {
-        "name": "Lote 083 (TERNERAS)",
-        "youtube_video_id": "0UoKIlnbMls",
-        "thumbnail_image": "https://img.youtube.com/vi/0UoKIlnbMls/mqdefault.jpg"
-    },
-    {
-        "name": "Lote 084 (TERNERAS)",
-        "youtube_video_id": "kvi8ZJwq_V0",
-        "thumbnail_image": "https://img.youtube.com/vi/kvi8ZJwq_V0/mqdefault.jpg"
-    },
-    {
-        "name": "Lote 085 (TERNERAS)",
-        "youtube_video_id": "8xe3aVmYO8M",
-        "thumbnail_image": "https://img.youtube.com/vi/8xe3aVmYO8M/mqdefault.jpg"
-    },
-    {
-        "name": "Lote 086 (TERNERAS)",
-        "youtube_video_id": "ma_0NaH94SE",
-        "thumbnail_image": "https://img.youtube.com/vi/ma_0NaH94SE/mqdefault.jpg"
-    },
-    {
-        "name": "Lote 087 (TERNERAS)",
-        "youtube_video_id": "W14SzY8kW3c",
-        "thumbnail_image": "https://img.youtube.com/vi/W14SzY8kW3c/mqdefault.jpg"
-    },
-    {
-        "name": "Lote 088 (TERNERAS)",
-        "youtube_video_id": "kalPrzHkgp0",
-        "thumbnail_image": "https://img.youtube.com/vi/kalPrzHkgp0/mqdefault.jpg"
-    },
-    {
-        "name": "Lote 089 (TERNERAS)",
-        "youtube_video_id": "8-jfLKHSPtE",
-        "thumbnail_image": "https://img.youtube.com/vi/8-jfLKHSPtE/mqdefault.jpg"
-    },
-    {
-        "name": "Lote 090 (TERNERAS)",
-        "youtube_video_id": "ODKT0faGSuk",
-        "thumbnail_image": "https://img.youtube.com/vi/ODKT0faGSuk/mqdefault.jpg"
-    },
-    {
-        "name": "Lote 091 (TERNERAS)",
-        "youtube_video_id": "eg1krvdsXhA",
-        "thumbnail_image": "https://img.youtube.com/vi/eg1krvdsXhA/mqdefault.jpg"
-    },
-    {
-        "name": "Lote 092 (TERNERAS)",
-        "youtube_video_id": "Zm2rA163soM",
-        "thumbnail_image": "https://img.youtube.com/vi/Zm2rA163soM/mqdefault.jpg"
-    },
-    {
-        "name": "Lote 093 (TERNERAS)",
-        "youtube_video_id": "O71zfu2FOCA",
-        "thumbnail_image": "https://img.youtube.com/vi/O71zfu2FOCA/mqdefault.jpg"
-    },
-    {
-        "name": "Lote 094 (TERNERAS A TÉRMINO)",
-        "youtube_video_id": "gdYmbuToD2w",
-        "thumbnail_image": "https://img.youtube.com/vi/gdYmbuToD2w/mqdefault.jpg"
-    },
-    {
-        "name": "Lote 095 (VAQUILLONAS PREÑADAS)",
-        "youtube_video_id": "nFaO3FDYNV0",
-        "thumbnail_image": "https://img.youtube.com/vi/nFaO3FDYNV0/mqdefault.jpg"
-    },
-    {
-        "name": "Lote 096 (VACAS PREÑADAS)",
-        "youtube_video_id": "tr-SvLR8Kv8",
-        "thumbnail_image": "https://img.youtube.com/vi/tr-SvLR8Kv8/mqdefault.jpg"
-    },
-    {
-        "name": "Lote 097 (VACAS PREÑADAS)",
-        "youtube_video_id": "WWyc68vrSUE",
-        "thumbnail_image": "https://img.youtube.com/vi/WWyc68vrSUE/mqdefault.jpg"
-    },
-    {
-        "name": "Lote 098 (VACAS PREÑADAS)",
-        "youtube_video_id": "JiSgREppqZs",
-        "thumbnail_image": "https://img.youtube.com/vi/JiSgREppqZs/mqdefault.jpg"
-    },
-    {
-        "name": "Lote 099 (VACAS PREÑADAS)",
-        "youtube_video_id": "b__uzsPmSdw",
-        "thumbnail_image": "https://img.youtube.com/vi/b__uzsPmSdw/mqdefault.jpg"
-    },
-    {
-        "name": "Lote 100 (VACA CUT PREÑADAS)",
-        "youtube_video_id": "qubtcUTc7iU",
-        "thumbnail_image": "https://img.youtube.com/vi/qubtcUTc7iU/mqdefault.jpg"
-    },
-    {
-        "name": "Lote 101 (VAQUILLONAS C/CRÍA)",
-        "youtube_video_id": "C7o0KgPuX6Y",
-        "thumbnail_image": "https://img.youtube.com/vi/C7o0KgPuX6Y/mqdefault.jpg"
-    },
-    {
-        "name": "Lote 102 (VACAS C/CRÍA)",
-        "youtube_video_id": "QOG-GJ8rQcA",
-        "thumbnail_image": "https://img.youtube.com/vi/QOG-GJ8rQcA/mqdefault.jpg"
-    },
-    {
-        "name": "Lote 103 (VACAS C/CRÍA)",
-        "youtube_video_id": "UAQNRdo8qVI",
-        "thumbnail_image": "https://img.youtube.com/vi/UAQNRdo8qVI/mqdefault.jpg"
-    },
-    {
-        "name": "Lote 008 (LOTES B)",
-        "youtube_video_id": "_gIcXfYYTGE",
-        "thumbnail_image": "https://img.youtube.com/vi/_gIcXfYYTGE/mqdefault.jpg"
-    }
+  {
+    "name": "Vaquillonas Orden 01 Lote 01",
+    "youtube_video_id": "X6VXUHDyMIo",
+    "thumbnail_image": "https://img.youtube.com/vi/X6VXUHDyMIo/mqdefault.jpg"
+  },
+  {
+    "name": "Vaquillonas Orden 02 Lote 02",
+    "youtube_video_id": "gUxSOGV8MXk",
+    "thumbnail_image": "https://img.youtube.com/vi/gUxSOGV8MXk/mqdefault.jpg"
+  },
+  {
+    "name": "Vaquillonas Orden 03 Lote 03",
+    "youtube_video_id": "lFZ6yKTeEsk",
+    "thumbnail_image": "https://img.youtube.com/vi/lFZ6yKTeEsk/mqdefault.jpg"
+  },
+  {
+    "name": "Vaquillonas Orden 03 Lote 04",
+    "youtube_video_id": "enAYIj9ERvI",
+    "thumbnail_image": "https://img.youtube.com/vi/enAYIj9ERvI/mqdefault.jpg"
+  },
+  {
+    "name": "Vaquillonas Orden 04 Lote 05",
+    "youtube_video_id": "NITuK8fh9RQ",
+    "thumbnail_image": "https://img.youtube.com/vi/NITuK8fh9RQ/mqdefault.jpg"
+  },
+  {
+    "name": "Vaquillonas Orden 05 Lote 06",
+    "youtube_video_id": "zMfRJE_cAis",
+    "thumbnail_image": "https://img.youtube.com/vi/zMfRJE_cAis/mqdefault.jpg"
+  },
+  {
+    "name": "Vaquillonas Orden 06 Lote 07",
+    "youtube_video_id": "kpBO227qq74",
+    "thumbnail_image": "https://img.youtube.com/vi/kpBO227qq74/mqdefault.jpg"
+  },
+  {
+    "name": "Vaquillonas Orden 06 Lote 08",
+    "youtube_video_id": "qo9aSSNgT70",
+    "thumbnail_image": "https://img.youtube.com/vi/qo9aSSNgT70/mqdefault.jpg"
+  },
+  {
+    "name": "Vaquillonas Orden 07 Lote 09",
+    "youtube_video_id": "oOe3mfiYw4w",
+    "thumbnail_image": "https://img.youtube.com/vi/oOe3mfiYw4w/mqdefault.jpg"
+  },
+  {
+    "name": "Vaquillonas Orden 07 Lote 10",
+    "youtube_video_id": "XikDgops1nA",
+    "thumbnail_image": "https://img.youtube.com/vi/XikDgops1nA/mqdefault.jpg"
+  },
+  {
+    "name": "Vaquillonas Orden 08 Lote 11",
+    "youtube_video_id": "lmTDooS5WBc",
+    "thumbnail_image": "https://img.youtube.com/vi/lmTDooS5WBc/mqdefault.jpg"
+  },
+  {
+    "name": "Vaquillonas Orden 09 Lote 13",
+    "youtube_video_id": "VVOXHMKctuA",
+    "thumbnail_image": "https://img.youtube.com/vi/VVOXHMKctuA/mqdefault.jpg"
+  },
+  {
+    "name": "Vaquillonas Orden 10 Lote 14",
+    "youtube_video_id": "WNxJkM5tHQo",
+    "thumbnail_image": "https://img.youtube.com/vi/WNxJkM5tHQo/mqdefault.jpg"
+  },
+  {
+    "name": "Terneras Orden 11 Lote 15",
+    "youtube_video_id": "XivGwvpE6DQ",
+    "thumbnail_image": "https://img.youtube.com/vi/XivGwvpE6DQ/mqdefault.jpg"
+  },
+  {
+    "name": "Terneras Orden 12 Lote 16",
+    "youtube_video_id": "D3zS-8SChtg",
+    "thumbnail_image": "https://img.youtube.com/vi/D3zS-8SChtg/mqdefault.jpg"
+  },
+  {
+    "name": "Terneras Orden 13 Lote 17",
+    "youtube_video_id": "yq7Anz3O2KQ",
+    "thumbnail_image": "https://img.youtube.com/vi/yq7Anz3O2KQ/mqdefault.jpg"
+  },
+  {
+    "name": "Terneras Orden 14 Lote 18",
+    "youtube_video_id": "2cjzn9sUvGc",
+    "thumbnail_image": "https://img.youtube.com/vi/2cjzn9sUvGc/mqdefault.jpg"
+  },
+  {
+    "name": "Terneras Orden 15 Lote 21",
+    "youtube_video_id": "2Sbwb7w224E",
+    "thumbnail_image": "https://img.youtube.com/vi/2Sbwb7w224E/mqdefault.jpg"
+  },
+  {
+    "name": "Terneras Orden 16 Lote 19",
+    "youtube_video_id": "9J_rjULflIM",
+    "thumbnail_image": "https://img.youtube.com/vi/9J_rjULflIM/mqdefault.jpg"
+  },
+  {
+    "name": "Terneras Orden 16 Lote 20",
+    "youtube_video_id": "8nSP9RDyFAw",
+    "thumbnail_image": "https://img.youtube.com/vi/8nSP9RDyFAw/mqdefault.jpg"
+  },
+  {
+    "name": "Toros Orden 01 Lote 01",
+    "youtube_video_id": "70oH9axfiGc",
+    "thumbnail_image": "https://img.youtube.com/vi/70oH9axfiGc/mqdefault.jpg"
+  },
+  {
+    "name": "Toros Orden 02 Lote 02",
+    "youtube_video_id": "t6-83Gc7upQ",
+    "thumbnail_image": "https://img.youtube.com/vi/t6-83Gc7upQ/mqdefault.jpg"
+  },
+  {
+    "name": "Toros Orden 03 Lote 03",
+    "youtube_video_id": "u1xEwpA9D4w",
+    "thumbnail_image": "https://img.youtube.com/vi/u1xEwpA9D4w/mqdefault.jpg"
+  },
+  {
+    "name": "Toros Orden 04 Lote 04",
+    "youtube_video_id": "5KY5IUeD5K4",
+    "thumbnail_image": "https://img.youtube.com/vi/5KY5IUeD5K4/mqdefault.jpg"
+  },
+  {
+    "name": "Toros Orden 05 Lote 05",
+    "youtube_video_id": "wDvlFT8EEr4",
+    "thumbnail_image": "https://img.youtube.com/vi/wDvlFT8EEr4/mqdefault.jpg"
+  },
+  {
+    "name": "Toros Orden 06 Lote 06",
+    "youtube_video_id": "8hYYNgU0u3k",
+    "thumbnail_image": "https://img.youtube.com/vi/8hYYNgU0u3k/mqdefault.jpg"
+  },
+  {
+    "name": "Toros Orden 06 Lote 07",
+    "youtube_video_id": "BVcRoZeDQaQ",
+    "thumbnail_image": "https://img.youtube.com/vi/BVcRoZeDQaQ/mqdefault.jpg"
+  },
+  {
+    "name": "Toros Orden 07 Lote 09",
+    "youtube_video_id": "y8hhUbwsju0",
+    "thumbnail_image": "https://img.youtube.com/vi/y8hhUbwsju0/mqdefault.jpg"
+  },
+  {
+    "name": "Toros Orden 08 Lote 10",
+    "youtube_video_id": "7NEn_LJUrkY",
+    "thumbnail_image": "https://img.youtube.com/vi/7NEn_LJUrkY/mqdefault.jpg"
+  },
+  {
+    "name": "Toros Orden 09 Lote 12",
+    "youtube_video_id": "s5QjU8IimLE",
+    "thumbnail_image": "https://img.youtube.com/vi/s5QjU8IimLE/mqdefault.jpg"
+  },
+  {
+    "name": "Toros Orden 09 Lote 11",
+    "youtube_video_id": "-v3AziPytb4",
+    "thumbnail_image": "https://img.youtube.com/vi/-v3AziPytb4/mqdefault.jpg"
+  },
+  {
+    "name": "Toros Orden 10 Lote 13",
+    "youtube_video_id": "0fcumhFJz5E",
+    "thumbnail_image": "https://img.youtube.com/vi/0fcumhFJz5E/mqdefault.jpg"
+  },
+  {
+    "name": "Toros Orden 11 Lote 14",
+    "youtube_video_id": "R1al3voO7CY",
+    "thumbnail_image": "https://img.youtube.com/vi/R1al3voO7CY/mqdefault.jpg"
+  },
+  {
+    "name": "Toros Orden 12 Lote 15",
+    "youtube_video_id": "1Q3n73xa5YM",
+    "thumbnail_image": "https://img.youtube.com/vi/1Q3n73xa5YM/mqdefault.jpg"
+  },
+  {
+    "name": "Embriones Lote 01",
+    "images": [
+      "https://selectaonline.com.ar/wp-content/uploads/2024/06/IMG_9921-scaled.jpg",
+      "https://selectaonline.com.ar/wp-content/uploads/2024/06/IMG_9922-scaled.jpg"
+    ]
+  },
+  {
+    "name": "Embriones Lote 02",
+    "images": [
+      "https://selectaonline.com.ar/wp-content/uploads/2024/06/IMG_9923-scaled.jpg",
+      "https://selectaonline.com.ar/wp-content/uploads/2024/06/IMG_9924-scaled.jpg"
+    ]
+  },
+  {
+    "name": "Embriones Lote 03",
+    "images": [
+      "https://selectaonline.com.ar/wp-content/uploads/2024/06/IMG_9925-scaled.jpg",
+      "https://selectaonline.com.ar/wp-content/uploads/2024/06/IMG_9926-scaled.jpg"
+    ]
+  },
+  {
+    "name": "Embriones Lote 04",
+    "images": [
+      "https://selectaonline.com.ar/wp-content/uploads/2024/06/IMG_9927-scaled.jpg",
+      "https://selectaonline.com.ar/wp-content/uploads/2024/06/IMG_9928-scaled.jpg"
+    ]
+  },
+  {
+    "name": "Embriones Lote 05",
+    "images": [
+      "https://selectaonline.com.ar/wp-content/uploads/2024/06/IMG_9929-scaled.jpg",
+      "https://selectaonline.com.ar/wp-content/uploads/2024/06/IMG_9930-scaled.jpg"
+    ]
+  },
+  {
+    "name": "Embriones Lote 06",
+    "images": [
+      "https://selectaonline.com.ar/wp-content/uploads/2024/06/IMG_9931-scaled.jpg",
+      "https://selectaonline.com.ar/wp-content/uploads/2024/06/IMG_9932-scaled.jpg"
+    ]
+  },
+  {
+    "name": "Embriones Lote 07",
+    "images": [
+      "https://selectaonline.com.ar/wp-content/uploads/2024/06/IMG_9933-scaled.jpg",
+      "https://selectaonline.com.ar/wp-content/uploads/2024/06/IMG_9934-scaled.jpg"
+    ]
+  },
+  {
+    "name": "Embriones Lote 08",
+    "images": [
+      "https://selectaonline.com.ar/wp-content/uploads/2024/06/IMG_9935-scaled.jpg",
+      "https://selectaonline.com.ar/wp-content/uploads/2024/06/IMG_9936-scaled.jpg"
+    ]
+  },
+  {
+    "name": "Embriones Lote 09",
+    "images": [
+      "https://selectaonline.com.ar/wp-content/uploads/2024/06/IMG_9937-scaled.jpg",
+      "https://selectaonline.com.ar/wp-content/uploads/2024/06/IMG_9938-scaled.jpg"
+    ]
+  },
+  {
+    "name": "Embriones Lote 10",
+    "images": [
+      "https://selectaonline.com.ar/wp-content/uploads/2024/06/IMG_9939-scaled.jpg",
+      "https://selectaonline.com.ar/wp-content/uploads/2024/06/IMG_9940-scaled.jpg"
+    ]
+  },
+  {
+    "name": "Embriones Lote 11",
+    "images": [
+      "https://selectaonline.com.ar/wp-content/uploads/2024/06/IMG_9941-scaled.jpg",
+      "https://selectaonline.com.ar/wp-content/uploads/2024/06/IMG_9942-scaled.jpg"
+    ]
+  },
+  {
+    "name": "Embriones Lote 12",
+    "images": [
+      "https://selectaonline.com.ar/wp-content/uploads/2024/06/IMG_9943-scaled.jpg",
+      "https://selectaonline.com.ar/wp-content/uploads/2024/06/IMG_9944-scaled.jpg"
+    ]
+  },
+  {
+    "name": "Embriones Lote 13",
+    "images": [
+      "https://selectaonline.com.ar/wp-content/uploads/2024/06/IMG_9945-scaled.jpg",
+      "https://selectaonline.com.ar/wp-content/uploads/2024/06/IMG_9946-scaled.jpg"
+    ]
+  }
 ]

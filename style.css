@@ -20,14 +20,13 @@ h1 {
     font-size: 2.5em;
 }
 
-.general-container { /* Agregado para envolver main si es necesario centralizar todo */
+.general-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%; /* Asegura que ocupe todo el ancho disponible */
+    width: 100%;
 }
 
-/* ** ESTE ES EL BLOQUE CORRECTO Y ÚNICO para .video-player-container ** */
 .video-player-container {
     width: 90%;
     max-width: 1200px;
@@ -35,33 +34,10 @@ h1 {
     background-color: #000;
     border-radius: 10px;
     overflow: hidden;
-    position: relative; /* CRUCIAL para que el iframe posicionado absolutamente funcione */
-
-    /* ***** SOLUCIÓN PROPUESTA: Usar el padding-top hack forzado ***** */
-    padding-top: 56.25%; /* Esto es (9 / 16) * 100% para una proporción 16:9 */
-    height: 0; /* Asegura que la altura del contenedor sea solo la del padding */
-
-    /* ***** COMENTA O ELIMINA ESTAS LÍNEAS ***** */
-    /* aspect-ratio: 16 / 9; */
-    /* height: auto; */
-
-    /* El bloque @supports también se puede ELIMINAR O COMENTAR si solo usas el hack */
-    /* @supports (aspect-ratio: 16/9) {
-        .video-player-container {
-            padding-top: 0;
-            aspect-ratio: 16 / 9;
-            height: auto;
-        }
-    } */
+    position: relative;
+    padding-top: 56.25%; 
+    height: 0;
 }
-
-
-/* ** ELIMINA O COMENTA #main-video ya que no lo usas con la API de YouTube ** */
-/* #main-video {
-    width: 100%;
-    height: auto;
-    display: block;
-} */
 
 .gallery-grid {
     display: grid;
@@ -109,15 +85,12 @@ h1 {
     font-size: 0.9em;
 }
 
-/* ** ESTOS ESTILOS SON CLAVE para el iframe de YouTube ** */
 #youtube-player {
-    position: absolute; /* CRUCIAL: Posiciona el reproductor absolutamente */
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    padding: 0;
-    margin: 0;
     background-color: #000;
 }
 #youtube-player iframe {
@@ -129,7 +102,33 @@ h1 {
     border: none;
 }
 
-/* Vuelve a activar el @supports si lo comentaste para depurar el TV */
+/* --- NUEVOS ESTILOS PARA EL CARRUSEL --- */
+#image-carousel-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none; /* Oculto por defecto */
+}
+
+.carousel-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* 'contain' para ver la imagen completa, 'cover' para llenar el espacio */
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.carousel-image.active {
+    opacity: 1; /* La imagen activa se hace visible */
+}
+/* --- FIN DE NUEVOS ESTILOS --- */
+
+
 @supports (aspect-ratio: 16/9) {
     .video-player-container {
         padding-top: 0;
@@ -138,18 +137,12 @@ h1 {
     }
 }
 
-/* Capa para bloquear los clics en el reproductor */
 .click-overlay {
-    /* Se posiciona de forma absoluta respecto al contenedor padre */
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-
-    /* Un z-index alto asegura que esté por encima de todo lo demás dentro del contenedor */
     z-index: 5;
-
-    /* Opcional: Cambia el cursor para que no parezca que se puede hacer clic */
     cursor: default;
 }

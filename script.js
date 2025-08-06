@@ -88,11 +88,16 @@ function playYouTubeVideo(videoId) {
                 width: '100%',
                 videoId: videoId,
                 playerVars: {
-                    'autoplay': 1,
-                    'controls': 1,
+                    'controls': 0,
                     'rel': 0,
                     'showinfo': 0,
-                    'modestbranding': 1
+                    'modestbranding': 1,
+                    'mute': 1,
+                    'loop': 1,
+                    'fs': 0,
+                    'autoplay': 1, // Asegúrate de que autoplay esté en 1 si quieres que inicie automáticamente
+                    // ***** LA CLAVE ES AÑADIR ESTO *****
+                    'playlist': videoId // Reproduce este video como si fuera una playlist de un solo elemento
                 },
                 events: {
                     'onReady': onPlayerReady,
@@ -100,8 +105,13 @@ function playYouTubeVideo(videoId) {
                 }
             });
         } else {
-            // Si el reproductor ya existe, simplemente carga un nuevo video
-            player.loadVideoById(videoId);
+            // Si el reproductor ya existe, para que el loop funcione al cambiar de video,
+            // debes cargar el nuevo video especificando también la playlist.
+            player.loadVideoById({
+                videoId: videoId,
+                // Y aquí también debes especificar la playlist para el loop continuo
+                playlist: videoId
+            });
         }
     } else {
         console.warn("La API de YouTube no está cargada aún. No se puede crear/reproducir el video.");
@@ -113,7 +123,12 @@ function onPlayerReady(event) {
 }
 
 function onPlayerStateChange(event) {
-    // Lógica para cambios de estado (si es necesario)
+    // La API de YouTube nos dice que el estado "finalizado" es el código 0.
+    // YT.PlayerState.ENDED es la variable oficial que contiene ese valor.
+    if (event.data === YT.PlayerState.ENDED) {
+        // Si el video terminó, simplemente le damos play de nuevo.
+        player.playVideo(); 
+    }
 }
 
 /**

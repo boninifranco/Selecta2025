@@ -1,175 +1,123 @@
 let player; // Variable global para el objeto del reproductor de YouTube
-let bovinosData = []; // Para almacenar los datos una vez cargados
-let youtubeAPIReady = false; // Estado de la API de YouTube
-let domLoaded = false; // Estado del DOM
-let carouselInterval = null; // NUEVO: Para controlar el intervalo del carrusel
+let bovinosData = []; // Para almacenar los datos de los bovinos una vez cargados
+let youtubeAPIReady = false; // Estado para saber si la API de YouTube está lista
+let domLoaded = false; // Estado para saber si el DOM está cargado
 
-// Función llamada por la API de YouTube
+// Esta función será llamada automáticamente por la API de YouTube cuando esté lista
 function onYouTubeIframeAPIReady() {
     youtubeAPIReady = true;
     console.log("API de YouTube está lista.");
-    checkAndInitializeApp();
+    checkAndInitializeApp(); // Intenta inicializar la aplicación
 }
 
 document.addEventListener('DOMContentLoaded', async () => {
     domLoaded = true;
     console.log("DOM está cargado.");
 
+    const bovinoGallery = document.getElementById('bovino-gallery');
+    // const youtubePlayerContainer = document.getElementById('youtube-player'); // Ya no es necesario obtenerlo aquí si solo lo usas en playYouTubeVideo
+
     try {
-        const response = await fetch('bovinos_youtube_data.json'); // Asegúrate que el nombre del archivo JSON sea correcto
+        const response = await fetch('bovinos_youtube_data.json');
         bovinosData = await response.json();
-        console.log("Datos cargados:", bovinosData);
-        loadBovinosGallery();
+        console.log("Response URL:", response.url);
+        console.log("bovinosData length:", bovinosData.length);
+        console.log("Primeros 2:", bovinosData.slice(0,2));
+        console.log("Últimos 2:", bovinosData.slice(-2));
+        loadBovinosGallery(); // Carga la galería una vez que los datos están disponibles
     } catch (error) {
-        console.error("Error al cargar los datos:", error);
-        alert("No se pudieron cargar los datos. Asegúrate de que el archivo JSON existe y es accesible.");
-        return;
+        console.error("Error al cargar los datos de bovinos:", error);
+        // Utiliza SweetAlert2 si lo tienes, sino un alert normal
+        // Swal.fire({
+        //     icon: 'error',
+        //     title: 'Oops...',
+        //     text: 'No se pudieron cargar los datos de los bovinos. Asegúrate de que "bovinos_youtube_data.json" existe y es accesible.',
+        // });
+        alert("No se pudieron cargar los datos de los bovinos. Asegúrate de que 'bovinos_youtube_data.json' existe y es accesible.");
+        return; // Detener la ejecución si no hay datos
     }
 
-    checkAndInitializeApp();
+    checkAndInitializeApp(); // Intenta inicializar la aplicación
 });
 
 /**
- * Verifica si todo está listo para inicializar la aplicación.
+ * Función para verificar si todo está listo e inicializar la app.
  */
 function checkAndInitializeApp() {
-    // Solo inicializa si el DOM, la API y los datos están listos
     if (domLoaded && youtubeAPIReady && bovinosData.length > 0) {
-        console.log("Todo listo. Inicializando con el primer item.");
-        const firstItem = bovinosData[0];
-        
-        // Decide si el primer item es un video o una imagen
-        if (firstItem.youtube_video_id) {
-            playYouTubeVideo(firstItem.youtube_video_id);
-        } else if (firstItem.images && firstItem.images.length > 0) {
-            displayImages(firstItem.images);
-        }
+        console.log("Ambos: DOM y API de YouTube están listos, y los datos cargados. Inicializando reproductor con el primer video.");
+        playYouTubeVideo(bovinosData[0].youtube_video_id);
     }
 }
 
+
 /**
- * Carga la galería de miniaturas. MODIFICADA PARA MANEJAR VIDEOS E IMÁGENES
+ * Carga las miniaturas de los bovinos en la galería.
  */
 function loadBovinosGallery() {
-    const bovinoGallery = document.getElementById('bovino-gallery');
-    bovinoGallery.innerHTML = ''; // Limpiar galería
+    const bovinoGallery = document.getElementById('bovino-gallery'); // Obtener aquí por si el DOM no estaba listo antes
+    bovinoGallery.innerHTML = ''; // Limpiar por si se llama más de una vez
 
     bovinosData.forEach(bovino => {
-        const bovinoItem = document.createElement('div');
-        bovinoItem.classList.add('bovino-item');
-
-        // Determina si es video o embrión (imágenes)
-        if (bovino.youtube_video_id) {
-            // LÓGICA PARA VIDEOS (EXISTENTE)
+        if (bovino.thumbnail_image && bovino.youtube_video_id) {
+            const bovinoItem = document.createElement('div');
+            bovinoItem.classList.add('bovino-item');
             bovinoItem.dataset.videoId = bovino.youtube_video_id;
+
             bovinoItem.innerHTML = `
                 <img src="${bovino.thumbnail_image}" alt="${bovino.name}">
                 <h3>${bovino.name}</h3>
             `;
+
             bovinoItem.addEventListener('click', () => {
                 playYouTubeVideo(bovino.youtube_video_id);
-                scrollToTop();
+                scrollToTop(); // Llama a la función para desplazar la vista
             });
-        } else if (bovino.images && bovino.images.length > 0) {
-            // NUEVA LÓGICA PARA IMÁGENES
-            bovinoItem.innerHTML = `
-                <img src="${bovino.images[0]}" alt="${bovino.name}">
-                <h3>${bovino.name}</h3>
-            `;
-            bovinoItem.addEventListener('click', () => {
-                displayImages(bovino.images);
-                scrollToTop();
-            });
+
+            bovinoGallery.appendChild(bovinoItem);
         }
-        
-        bovinoGallery.appendChild(bovinoItem);
     });
 }
 
-
 /**
- * NUEVO: Muestra imágenes en el área del reproductor.
- * @param {string[]} images - Un array con las URLs de las imágenes.
- */
-function displayImages(images) {
-    // Detener y ocultar el reproductor de YouTube
-    if (player) {
-        player.stopVideo();
-        document.getElementById('youtube-player').style.display = 'none';
-    }
-
-    // Detener cualquier carrusel anterior
-    clearInterval(carouselInterval);
-
-    const imageContainer = document.getElementById('image-carousel-container');
-    imageContainer.innerHTML = ''; // Limpiar contenedor
-    imageContainer.style.display = 'block'; // Hacer visible el contenedor de imágenes
-
-    if (images.length === 1) {
-        // Si hay una sola imagen, mostrarla estáticamente
-        imageContainer.innerHTML = `<img src="${images[0]}" class="carousel-image active">`;
-    } else {
-        // Si hay varias, iniciar el carrusel
-        startImageCarousel(images, imageContainer);
-    }
-}
-
-/**
- * NUEVO: Inicia un carrusel de imágenes automático.
- * @param {string[]} images - El array de URLs de imágenes.
- * @param {HTMLElement} container - El elemento contenedor del carrusel.
- */
-function startImageCarousel(images, container) {
-    let currentIndex = 0;
-    
-    // Crear todos los elementos de imagen
-    images.forEach((src, index) => {
-        const img = document.createElement('img');
-        img.src = src;
-        img.classList.add('carousel-image');
-        if (index === 0) {
-            img.classList.add('active'); // La primera imagen es la activa
-        }
-        container.appendChild(img);
-    });
-
-    const imageElements = container.querySelectorAll('.carousel-image');
-
-    // Iniciar el intervalo para cambiar de imagen
-    carouselInterval = setInterval(() => {
-        imageElements[currentIndex].classList.remove('active');
-        currentIndex = (currentIndex + 1) % images.length; // Loop
-        imageElements[currentIndex].classList.add('active');
-    }, 3000); // Cambia cada 3 segundos
-}
-
-/**
- * Reproduce un video de YouTube. MODIFICADO para detener el carrusel.
- * @param {string} videoId - El ID del video de YouTube.
+ * Reproduce el video de YouTube usando la API de IFrame Player.
+ * @param {string} videoId - El ID del video de YouTube a reproducir.
  */
 function playYouTubeVideo(videoId) {
-    // NUEVO: Detener el carrusel y ocultar su contenedor
-    clearInterval(carouselInterval);
-    document.getElementById('image-carousel-container').style.display = 'none';
-    
-    // Mostrar el contenedor del reproductor de YouTube
-    const playerContainer = document.getElementById('youtube-player');
-    playerContainer.style.display = 'block';
-
     if (typeof YT !== 'undefined' && YT.Player) {
         if (!player) {
             player = new YT.Player('youtube-player', {
                 height: '100%',
                 width: '100%',
                 videoId: videoId,
-                playerVars: { 'controls': 0, 'rel': 0, 'showinfo': 0, 'modestbranding': 1, 'mute': 1, 'loop': 1, 'fs': 0, 'autoplay': 1, 'playlist': videoId },
-                events: { 'onReady': onPlayerReady, 'onStateChange': onPlayerStateChange }
+                playerVars: {
+                    'controls': 0,
+                    'rel': 0,
+                    'showinfo': 0,
+                    'modestbranding': 1,
+                    'mute': 1,
+                    'loop': 1,
+                    'fs': 0,
+                    'autoplay': 1, // Asegúrate de que autoplay esté en 1 si quieres que inicie automáticamente
+                    // ***** LA CLAVE ES AÑADIR ESTO *****
+                    'playlist': videoId // Reproduce este video como si fuera una playlist de un solo elemento
+                },
+                events: {
+                    'onReady': onPlayerReady,
+                    'onStateChange': onPlayerStateChange
+                }
             });
         } else {
-            player.loadVideoById({ videoId: videoId, playlist: videoId });
+            // Si el reproductor ya existe, para que el loop funcione al cambiar de video,
+            // debes cargar el nuevo video especificando también la playlist.
+            player.loadVideoById({
+                videoId: videoId,
+                // Y aquí también debes especificar la playlist para el loop continuo
+                playlist: videoId
+            });
         }
     } else {
-        console.warn("La API de YouTube no está cargada aún.");
+        console.warn("La API de YouTube no está cargada aún. No se puede crear/reproducir el video.");
     }
 }
 
@@ -178,11 +126,17 @@ function onPlayerReady(event) {
 }
 
 function onPlayerStateChange(event) {
+    // La API de YouTube nos dice que el estado "finalizado" es el código 0.
+    // YT.PlayerState.ENDED es la variable oficial que contiene ese valor.
     if (event.data === YT.PlayerState.ENDED) {
+        // Si el video terminó, simplemente le damos play de nuevo.
         player.playVideo(); 
     }
 }
 
+/**
+ * Desplaza la ventana del navegador al inicio de la página.
+ */
 function scrollToTop() {
     window.scrollTo({
         top: 0,

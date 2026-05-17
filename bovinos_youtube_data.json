@@ -30,21 +30,21 @@
     "type": "image"
   },
   {
-    "title": "LUNES 18",
-    "category": "ACTIVIDADES ESPECIALES",
-    "image": "assets/especiales/3.jpeg",
-    "type": "image"
-  },
-  {
-    "title": "MARTES 19",
+    "title": "SELECCIÓN DE HEMBRAS",
     "category": "ACTIVIDADES ESPECIALES",
     "image": "assets/especiales/1.jpeg",
     "type": "image"
   },
   {
-    "title": "A PARTIR DEL MARTES 19",
-    "category": "AGENDA DE ACTIVIDADES",
-    "image": "assets/agenda/martes2.jpeg",
+    "title": "MINI ANGUS",
+    "category": "ACTIVIDADES ESPECIALES",
+    "image": "assets/especiales/2.jpeg",
+    "type": "image"
+  },
+  {
+    "title": "CAMINO DE LOS CAMPEONES",
+    "category": "ACTIVIDADES ESPECIALES",
+    "image": "assets/especiales/3.jpeg",
     "type": "image"
   },
   {

@@ -12,12 +12,6 @@
     "type": "image"
   },
   {
-    "title": "A PARTIR DEL MARTES 19",
-    "category": "AGENDA DE ACTIVIDADES",
-    "image": "assets/agenda/martes2.jpeg",
-    "type": "image"
-  },
-  {
     "title": "MIERCOLES 20",
     "category": "AGENDA DE ACTIVIDADES",
     "image": "assets/agenda/miercoles.jpeg",
@@ -38,22 +32,21 @@
   {
     "title": "LUNES 18",
     "category": "ACTIVIDADES ESPECIALES",
-    "image": "assets/especiales/1.jpeg",
-    "type": "image"
-  },
-  {
-    "title": "LUNES 18",
-    "category": "ACTIVIDADES ESPECIALES",
-    "image": "assets/especiales/2.jpeg",
+    "image": "assets/especiales/3.jpeg",
     "type": "image"
   },
   {
     "title": "MARTES 19",
     "category": "ACTIVIDADES ESPECIALES",
-    "image": "assets/especiales/3.jpeg",
+    "image": "assets/especiales/1.jpeg",
     "type": "image"
   },
-
+  {
+    "title": "A PARTIR DEL MARTES 19",
+    "category": "AGENDA DE ACTIVIDADES",
+    "image": "assets/agenda/martes2.jpeg",
+    "type": "image"
+  },
   {
     "title": "LUNES 18",
     "category": "REMATES DE LA 83 EXPOANGUS DE OTOÑO",

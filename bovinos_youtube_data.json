@@ -2,37 +2,37 @@
   {
     "title": "LUNES 18",
     "category": "AGENDA DE ACTIVIDADES",
-    "image": "../assets/images/lunes.jpeg",
+    "image": "../assets/agenda/lunes.jpeg",
     "type": "image"
   },
   {
     "title": "MARTES 19",
     "category": "AGENDA DE ACTIVIDADES",
-    "image": "../assets/images/martes.jpeg",
+    "image": "../assets/agenda/martes.jpeg",
     "type": "image"
   },
    {
     "title": "A PARTIR DEL MARTES 19",
     "category": "AGENDA DE ACTIVIDADES",
-    "image": "../assets/images/martes2.jpeg",
+    "image": "../assets/agenda/martes2.jpeg",
     "type": "image"
   },
   {
     "title": "MIERCOLES 20",
     "category": "AGENDA DE ACTIVIDADES",
-    "image": "../assets/images/miercoles.jpeg",
+    "image": "../assets/agenda/miercoles.jpeg",
     "type": "image"
   },
   {
     "title": "JUEVES 21",
     "category": "AGENDA DE ACTIVIDADES",
-    "image": "../assets/images/jueves.jpeg",
+    "image": "../assets/agenda/jueves.jpeg",
     "type": "image"
   },
   {
     "title": "VIERNES 22",
     "category": "AGENDA DE ACTIVIDADES",
-    "image": "../assets/images/viernes.jpeg",
+    "image": "../assets/agenda/viernes.jpeg",
     "type": "image"
   }
 ]

@@ -1,116 +1,17 @@
 [
   {
-    "title": "LUNES 18",
-    "category": "AGENDA DE ACTIVIDADES",
-    "image": "assets/agenda/lunes.jpeg",
+    "title": "AGENDA ANGUS – EXPO RURAL 26",
+    "image": "assets/exporural/1.jpeg",
     "type": "image"
   },
   {
-    "title": "MARTES 19",
-    "category": "AGENDA DE ACTIVIDADES",
-    "image": "assets/agenda/martes.jpeg",
+    "title": "MARTES 21, MIÉRCOLES 22 Y JUEVES 23",
+    "image": "assets/exporural/2.jpeg",
     "type": "image"
   },
   {
-    "title": "MIERCOLES 20",
-    "category": "AGENDA DE ACTIVIDADES",
-    "image": "assets/agenda/miercoles.jpeg",
-    "type": "image"
-  },
-  {
-    "title": "JUEVES 21",
-    "category": "AGENDA DE ACTIVIDADES",
-    "image": "assets/agenda/jueves.jpeg",
-    "type": "image"
-  },
-  {
-    "title": "VIERNES 22",
-    "category": "AGENDA DE ACTIVIDADES",
-    "image": "assets/agenda/viernes.jpeg",
-    "type": "image"
-  },
-  {
-    "title": "LUNES 18 - CAMINO DE LOS CAMPEONES",
-    "category": "ACTIVIDADES ESPECIALES",
-    "image": "assets/especiales/1.jpeg",
-    "type": "image"
-  },
-  {
-    "title": "MARTES 19 - SELECCIÓN DE HEMBRAS",
-    "category": "ACTIVIDADES ESPECIALES",
-    "image": "assets/especiales/2.jpeg",
-    "type": "image"
-  },
-  {
-    "title": "A PARTIR DEL MARTES 19 - MINI ANGUS",
-    "category": "ACTIVIDADES ESPECIALES",
-    "image": "assets/especiales/3.jpeg",
-    "type": "image"
-  },
-  {
-    "title": "LUNES 18",
-    "category": "REMATES DE LA 83 EXPOANGUS DE OTOÑO",
-    "image": "assets/remates/lunes.jpeg",
-    "type": "image"
-  },
-  {
-    "title": "MARTES 19",
-    "category": "REMATES DE LA 83 EXPOANGUS DE OTOÑO",
-    "image": "assets/remates/martes1.jpeg",
-    "type": "image"
-  },
-  {
-    "title": "MARTES 19",
-    "category": "REMATES DE LA 83 EXPOANGUS DE OTOÑO",
-    "image": "assets/remates/martes2.jpeg",
-    "type": "image"
-  },
-  {
-    "title": "MARTES 19",
-    "category": "REMATES DE LA 83 EXPOANGUS DE OTOÑO",
-    "image": "assets/remates/martes3.jpeg",
-    "type": "image"
-  },
-  {
-    "title": "MIERCOLES 20",
-    "category": "REMATES DE LA 83 EXPOANGUS DE OTOÑO",
-    "image": "assets/remates/miercoles1.jpeg",
-    "type": "image"
-  },
-  {
-    "title": "MIERCOLES 20",
-    "category": "REMATES DE LA 83 EXPOANGUS DE OTOÑO",
-    "image": "assets/remates/miercoles2.jpeg",
-    "type": "image"
-  },
-  {
-    "title": "MIERCOLES 20",
-    "category": "REMATES DE LA 83 EXPOANGUS DE OTOÑO",
-    "image": "assets/remates/miercoles3.jpeg",
-    "type": "image"
-  },
-  {
-    "title": "JUEVES 21",
-    "category": "REMATES DE LA 83 EXPOANGUS DE OTOÑO",
-    "image": "assets/remates/jueves.jpeg",
-    "type": "image"
-  },
-  {
-    "title": "JUEVES 21",
-    "category": "REMATES DE LA 83 EXPOANGUS DE OTOÑO",
-    "image": "assets/remates/jueves2.jpeg",
-    "type": "image"
-  },
-  {
-    "title": "VIERNES 22",
-    "category": "REMATES DE LA 83 EXPOANGUS DE OTOÑO",
-    "image": "assets/remates/viernes1.jpeg",
-    "type": "image"
-  },
-  {
-    "title": "VIERNES 22",
-    "category": "REMATES DE LA 83 EXPOANGUS DE OTOÑO",
-    "image": "assets/remates/viernes2.jpeg",
+    "title": "VIERNES 24 Y SÁBADO 25",
+    "image": "assets/exporural/3.jpeg",
     "type": "image"
   }
 ]
